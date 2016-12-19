@@ -56,6 +56,10 @@ System.out.println("Skriv in storleken på ditt korsord!");
 		int bytut = in.nextInt();
 		String bytuttill = in.nextLine();
 		nyckel [bytut] = bytuttill.charAt(1);
-	}
+		
+		}
+		
+	
+		
 }
 }

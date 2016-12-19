@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class palindrom {
+
+ public static void main(String[] args) {
+	 
+	 String mening = new String();
+	 int antaltecken;
+	 
+	 System.out.print("Skriv in en mening:  ");
+	 Scanner tangentbord = new Scanner(System.in);
+	 
+	 mening = tangentbord.nextLine();
+	 
+	 antaltecken = mening.length();
+	 System.out.println("Meningen är "+antaltecken+"tecken lång");
+	 tangentbord.close();
+	 
+
+	}
+
+}

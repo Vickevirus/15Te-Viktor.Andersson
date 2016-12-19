@@ -1,0 +1,40 @@
+package palindrom;
+
+import java.util.Scanner;
+public class palindrom {
+
+ public static void main(String[] args) {
+	 
+	 String mening = new String();
+	 int antaltecken;
+	 
+	 System.out.print("Skriv in en mening:  ");
+	 Scanner tangentbord = new Scanner(System.in);
+	 
+	 mening = tangentbord.nextLine();
+	 
+	 antaltecken = mening.length();
+	 System.out.println("Meningen är "+antaltecken+"tecken lång");
+	 tangentbord.close();
+	 
+	 //Vi vänder på meningen och skriver ut den
+	 
+	 for(int plats = antaltecken-1; plats >= 0; plats--)
+	 {
+		 System.out.print(mening.charAt(plats));
+	 }
+
+	 String reversed = new StringBuilder(mening).reverse().toString();
+	 
+	 System.out.println(" Baklänges: "+reversed);
+	 
+	 reversed =reversed.replaceAll(" ", "");
+	 mening = mening.replaceAll(" ", "");
+	 
+	 	 if(mening.equalsIgnoreCase(reversed)) {
+		 System.out.println("Ett palindrom!");
+	 }
+	 
+	}
+
+}
