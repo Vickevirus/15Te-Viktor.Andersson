@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class AdventureGame {
+
+	float hälsa = 100;
+	int pengar = 10;
+	String förnamn = "";
+	String efternamn = "";
+	String spelarnamn = "";
+	int ålder;
+	int sträcka = 0;
+	int posX = 0;
+	int posY = 0;
+	
+	public static void main(String[] args) {
+		
+		// presentera spelet
+		System.out.println("Ett Äventyrsspel!");
+		System.out.println("LYCKA TILL!");
+		//Läs in spelarens namn och karaktärsnamn
+		
+		//Börja spelet
+		
+		String kommando = "";
+		System.out.print("Vad ska vi göra? ");
+		Scanner in = new Scanner(System.in);
+		kommando = in.nextLine();
+			
+		// Håll på så långe det magiska ordet INTE är matat
+		while ( !(kommando.equals("Exit!!")))
+		{
+			System.out.print("Vad ska vi göra? ");
+			kommando = in.nextLine();
+							
+		}
+			System.out.println("Hejdååååå");
+
+	
+
+	}
+
+}
