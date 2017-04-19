@@ -1,0 +1,69 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Sorteringbubble { 
+
+
+	public static void main(String[] args) {
+
+
+
+
+	    Scanner in = new Scanner(System.in);                                                    
+	    System.out.print("Hur många nummer vill du ha? (Max 1000) ");     
+	    int varde = in.nextInt();   
+	    System.out.print("");
+	    System.out.println("här är dina osorterade nummer:");
+
+
+	    int randomArray[]=new int[varde];                                                       
+	    for(int i = 0; i<varde; i++)
+
+	    {   
+	        randomArray [i] = (int) (Math.random () * 999); 
+	        System.out.print(" "+randomArray[i]);
+
+
+	    }
+	    BubbleSort(randomArray);
+	    System.out.println();
+	    System.out.println();
+	    System.out.println(Här är dina sorterade nummer:);
+	    
+
+	    for(int i = 0; i<varde; i++)
+
+	    {   
+	        System.out.print(" "+randomArray[i]);
+	    }
+
+	    
+	}
+	    
+	public static void BubbleSort( int [] num )
+	{
+	     int j;
+	     boolean flag = true;   // set flag to true to begin first pass
+	     int temp;   //holding variable
+
+	     while ( flag )
+	     {
+	            flag= false;    //set flag to false awaiting a possible swap
+	            for( j=0;  j < num.length -1;  j++ )
+	            {
+	                   if ( num[ j ] > num[j+1] )   // change to > for ascending sort
+	                   {
+	                           temp = num[ j ];                //swap elements
+	                           num[ j ] = num[ j+1 ];
+	                           num[ j+1 ] = temp;
+	                          flag = true;              //shows a swap occurred  
+	                  } 
+	            } 
+	      } 
+	} 
+	
+	}
+
+	    
+	   
+	

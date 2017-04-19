@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Sorteringbubble { 
+
+
+	public static void main(String[] args) {
+
+
+
+
+	    Scanner in = new Scanner(System.in);                                                    
+	    System.out.print("How many random numbers? 0 – 999 do you want? ");     
+	    int varde = in.nextInt();   
+	    System.out.print("");
+	    System.out.println("Here are your numbers:");
+
+
+	    int randomArray[]=new int[varde];                                                       
+	    for(int i = 0; i<varde; i++)
+
+	    {   
+	        randomArray [i] = (int) (Math.random () * 999); 
+	        System.out.print(" "+randomArray[i]);
+
+
+	    ArrayList lowNumbers = new ArrayList();
+	    if (randomArray.equals(""))
+	    {
+	        lowNumbers.add(randomArray);
+	        System.out.println("Low Numbers: "+lowNumbers);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+	    }
+	}
+}
+	    
+	   
+	

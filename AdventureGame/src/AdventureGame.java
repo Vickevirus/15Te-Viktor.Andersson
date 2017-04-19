@@ -11,6 +11,9 @@ public class AdventureGame {
 	static int sträcka = 0;
 	static int posX = 0;
 	static int posY = 0;
+	static int snorPengar = "";
+
+
 	
 	public static void main(String[] args) {
 		
@@ -19,12 +22,27 @@ public class AdventureGame {
 		System.out.println("LYCKA TILL!");
 		//Läs in spelarens namn och karaktärsnamn
 		
-		//Börja spelet
+		//Spelet börjar
 		
 		String kommando = "";
-		System.out.print("Vad ska vi göra? ");
+		System.out.print("Vad ska du göra? ");
 		Scanner in = new Scanner(System.in);
 		kommando = in.nextLine();
+		
+		static void Npc(){
+			if probability() < 90{
+				int alntalPengar = probability(10)+1;
+				System.out.println("Du mötte en Npc som gav dig " + antalPengar "guld!");
+		}
+			else
+			{
+				int snorPengar = 30 + probability(41);
+				pengar = pengar - pengar*((float)snorPengar) /100
+				
+				
+			}
+		
+		}
 			
 		// Håll på så långe det magiska ordet INTE är matat
 		while ( !(kommando.equals("Exit!!")))
@@ -48,20 +66,24 @@ public class AdventureGame {
 			if(kommando.equalsIgnoreCase("V")){
 				System.out.println("Väster");
 				posX -=1;
+	
 			}
+			
+
 			hälsa -=0.1;
 			System .out.println("Du är på("+posX+","+posY+") och har hälsan:"+hälsa);
 			
 			
-			System.out.print("Vad ska vi göra? ");
+			System.out.print("Vad ska du göra? ");
 			kommando = in.nextLine();
 							
 		}
 			
-		System.out.println("Hejdååååå");
+		System.out.println("Goodbye my friend");
 
 	
 
 	}
 
-}
+
+	}
